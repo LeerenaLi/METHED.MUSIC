@@ -62,6 +62,10 @@
     opacity: 1;
 }
 
+.track_active-paused .track__img-wrap::after {
+    background-image: url('../img/play.svg');
+}
+
 .track_active:hover .track__img-wrap::after {
     background-color: #fff;
 }

@@ -19,6 +19,8 @@
 
     <link rel="stylesheet" href="css/index.css">
 
+    <script src="js/index.js" defer></script>
+
     <title>METHED.MUSIC</title>
 </head>
 <body>
@@ -49,7 +51,7 @@
         <h2 class="visually-hidden">Список треков</h2>
 
         <div class="catalog__container">
-            <button class="catalog__item track">
+            <button class="catalog__item track" data-track="audio/The Weeknd - Save Your Tears.mp3">
                 <div class="track__img-wrap">
                     <img src="img/photo1.jpg" alt="The weeknd - Save your tears" class="track__poster" width="180" height="180">
                 </div>
@@ -60,7 +62,7 @@
                 </div>
             </button>
 
-            <button class="catalog__item track track_active">
+            <button class="catalog__item track" data-track="audio/Imagine Dragons - Follow You.mp3">
                 <div class="track__img-wrap">
                     <img src="img/photo2.jpg" alt="Imagine Dragons - Follow You" class="track__poster" width="180" height="180">
                 </div>
@@ -71,7 +73,7 @@
                 </div>
             </button>
 
-            <button class="catalog__item track">
+            <button class="catalog__item track" data-track="audio/Tove Lo - How Long.mp3">
                 <div class="track__img-wrap">
                     <img src="img/photo3.jpg" alt="How Long - Dirt Femme" class="track__poster" width="180" height="180">
                 </div>
@@ -82,7 +84,7 @@
                 </div>
             </button>
 
-            <button class="catalog__item track">
+            <button class="catalog__item track" data-track="audio/Tom Odell - Another Love.mp3">
                 <div class="track__img-wrap">
                     <img src="img/photo4.jpg" alt="Tom Odell - Another Love" class="track__poster" width="180" height="180">
                 </div>
@@ -93,7 +95,7 @@
                 </div>
             </button>
 
-            <button class="catalog__item track">
+            <button class="catalog__item track" data-track="audio/Lana Del Rey - Born To Die.mp3">
                 <div class="track__img-wrap">
                     <img src="img/photo5.jpg" alt="Lana Del Rey - Born to Die" class="track__poster" width="180" height="180">
                 </div>
@@ -104,9 +106,9 @@
                 </div>
             </button>
 
-            <button class="catalog__item track">
+            <button class="catalog__item track" data-track="audio/Adele - Hello.mp3">
                 <div class="track__img-wrap">
-                    <img src="img/photo6.jpg" alt="The weeknd - Hello" class="track__poster" width="180" height="180">
+                    <img src="img/photo6.jpg" alt="Adele - Hello" class="track__poster" width="180" height="180">
                 </div>
 
                 <div class="track__info">
@@ -115,7 +117,7 @@
                 </div>
             </button>
 
-            <button class="catalog__item track">
+            <button class="catalog__item track" data-track="audio/Tom Odell - Can't Pretend.mp3">
                 <div class="track__img-wrap">
                     <img src="img/photo7.jpg" alt="Tom Odell - Can't Pretend" class="track__poster" width="180" height="180">
                 </div>
@@ -126,7 +128,7 @@
                 </div>
             </button>
 
-            <button class="catalog__item track">
+            <button class="catalog__item track" data-track="audio/Lana Del Rey - Young And Beautiful.mp3">
                 <div class="track__img-wrap">
                     <img src="img/photo8.jpg" alt="Lana Del Rey - Young and Beautiful" class="track__poster" width="180" height="180">
                 </div>
@@ -137,7 +139,7 @@
                 </div>
             </button>
 
-            <button class="catalog__item track">
+            <button class="catalog__item track" data-track="audio/Adele - Someone Like You.mp3">
                 <div class="track__img-wrap">
                     <img src="img/photo9.jpg" alt="Adele - Someone Like Yous" class="track__poster" width="180" height="180">
                 </div>
@@ -148,7 +150,7 @@
                 </div>
             </button>
 
-            <button class="catalog__item track">
+            <button class="catalog__item track" data-track="audio/Imagine Dragons - Natural.mp3">
                 <div class="track__img-wrap">
                     <img src="img/photo10.jpg" alt="Imagine Dragons - Natural" class="track__poster" width="180" height="180">
                 </div>
@@ -159,18 +161,18 @@
                 </div>
             </button>
 
-            <button class="catalog__item track">
+            <button class="catalog__item track" data-track="audio/Drake - Laugh Now Cry Later.mp3">
                 <div class="track__img-wrap">
                     <img src="img/photo11.jpg" alt="Drake - laugh now cry later" class="track__poster" width="180" height="180">
                 </div>
 
                 <div class="track__info">
-                    <p class="track__title">laugh now cry later</p>
+                    <p class="track__title">Laugh now cry later</p>
                     <p class="track__artist">Drake</p>
                 </div>
             </button>
 
-            <button class="catalog__item track">
+            <button class="catalog__item track" data-track="audio/Madonna - Frozen.mp3">
                 <div class="track__img-wrap">
                     <img src="img/photo12.jpg" alt="Madonna - Frozen" class="track__poster" width="180" height="180">
                 </div>
@@ -190,7 +192,7 @@
         </div>
     </section>
 
-    <section class="player player_active">
+    <section class="player">
         <h2 class="visually-hidden">Плеер</h2>
 
         <div class="player__container">
@@ -199,12 +201,12 @@
                 <p class="player__artist">Madonna</p>
             </div>
 
-            <div class="player__controller">
-                <button class="player__icon player__icon_stop"></button>
-                <button class="player__icon player__icon_prev"></button>
-                <button class="player__icon player__icon_pause"></button>
-                <button class="player__icon player__icon_next"></button>
-                <button class="player__icon player__icon_like"></button>
+            <div class="player__controller controller">
+                <button class="player__icon player__icon_stop controller__stop"></button>
+                <button class="player__icon player__icon_prev controller__prev"></button>
+                <button class="player__icon player__icon_pause controller__pause"></button>
+                <button class="player__icon player__icon_next controller__next"></button>
+                <button class="player__icon player__icon_like controller__like"></button>
             </div>
 
             <div class="player__progress-wrap">
