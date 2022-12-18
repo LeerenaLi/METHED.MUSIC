@@ -50,7 +50,8 @@
 }
 
 .player__icon:hover {
-    transform: scale(1.2);
+    /* transform: scale(1.2); */
+    opacity: 0.8;
 }
 
 .player__icon_stop {
