@@ -15,6 +15,11 @@
 
 .header__logo {
     margin-right: 69px;
+    cursor: pointer;
+}
+
+.header__logo svg:hover {
+    fill: red;
 }
 
 .header__search {
