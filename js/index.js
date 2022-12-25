@@ -1,5 +1,9 @@
 'use strict';
 
+const API_URL = 'http://localhost:3024/';
+
+// let dataMusic = [];
+
 const dataMusic = [
     {
         id: '1',
@@ -109,6 +113,10 @@ const playerProgressInput = document.querySelector('.player__progress-input');
 const playerTimePassed = document.querySelector('.player__time-passed');
 const playerTimeTotal = document.querySelector('.player__time-total');
 const playerVolumeInput = document.querySelector('.player__volume-input');
+const playerTitle = document.querySelector('.player__title');
+const playerArtist = document.querySelector('.player__artist');
+
+const search = document.querySelector('.search');
 
 
 const catalogAddBtn = document.createElement('button');
@@ -158,6 +166,9 @@ const playMusic = event => {
         return id === item.id;
     });
     audio.src = track.mp3;
+
+    playerTitle.textContent = `${track.track}`;
+    playerArtist.textContent = `${track.artist}`;
 
     audio.play();
     player.classList.add('player_active');
@@ -252,6 +263,8 @@ const updateTime = () => {
 const init = () => {
     audio.volume = localStorage.getItem('volume') || 1;
     playerVolumeInput.value = audio.volume * 100;
+
+    // dataMusic = await fetch(`${API_URL}api/music `).then((data) => data.json());
 
     renderCatalog(dataMusic);
     checkCount();
