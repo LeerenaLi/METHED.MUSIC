@@ -86,6 +86,167 @@
             poster: 'img/photo12.jpg',
             mp3: 'audio/Madonna - Frozen.mp3',
         },
+        {
+            id: '13',
+            artist: 'Mary Gu',
+            track: 'Косички',
+            poster: 'img/photo13.jpg',
+            mp3: 'audio/Mary Gu - Косички.mp3',
+        },
+        {
+            id: '14',
+            artist: 'HammAli & Navai',
+            track: 'Птичка',
+            poster: 'img/photo14.jpg',
+            mp3: 'audio/HammAli & Navai - Птичка.mp3',
+        },
+        {
+            id: '15',
+            artist: 'Shawn Mendes, Camila Cabello',
+            track: 'Señorita',
+            poster: 'img/photo15.jpg',
+            mp3: 'audio/Shawn Mendes, Camila Cabello - Señorita.mp3',
+        },
+        {
+            id: '16',
+            artist: 'KALVADOS',
+            track: 'Простыни',
+            poster: 'img/photo16.jpg',
+            mp3: 'audio/KALVADOS - Простыни.mp3',
+        },
+        {
+            id: '17',
+            artist: 'RSAC',
+            track: 'NBA',
+            poster: 'img/photo17.jpg',
+            mp3: 'audio/RSAC - NBA.mp3',
+        },
+        {
+            id: '18',
+            artist: 'Minelli',
+            track: 'Rampampam',
+            poster: 'img/photo18.jpg',
+            mp3: 'audio/Minelli - Rampampam.mp3',
+        },
+        {
+            id: '19',
+            artist: 'Masked Wolf',
+            track: 'Astronaut In The Ocean',
+            poster: 'img/photo19.jpg',
+            mp3: 'audio/Masked Wolf - Astronaut In The Ocean.mp3',
+        },
+        {
+            id: '20',
+            artist: 'Imagine Dragons',
+            track: 'Bones',
+            poster: 'img/photo20.jpg',
+            mp3: 'audio/Imagine Dragons - Bones.mp3',
+        },
+        {
+            id: '21',
+            artist: 'Дора',
+            track: 'Втюрилась',
+            poster: 'img/photo21.jpg',
+            mp3: 'audio/Дора - Втюрилась.mp3',
+        },
+        {
+            id: '22',
+            artist: 'Jaydan Wolf',
+            track: 'Smells Like Teen Spirit',
+            poster: 'img/photo22.jpg',
+            mp3: 'audio/Jaydan Wolf - Smells Like Teen Spirit.mp3',
+        },
+        {
+            id: '23',
+            artist: 'Макс Корж',
+            track: 'Это наш путь',
+            poster: 'img/photo23.jpg',
+            mp3: 'audio/Макс Корж - Это наш путь.mp3',
+        },
+        {
+            id: '24',
+            artist: 'Zivert',
+            track: 'WAKE UP!',
+            poster: 'img/photo24.jpg',
+            mp3: 'audio/Zivert - WAKE UP!.mp3',
+        },
+        {
+            id: '25',
+            artist: 'Dame Dame ft. Lunis',
+            track: 'Beggin',
+            poster: 'img/photo25.jpg',
+            mp3: 'audio/Dame Dame ft. Lunis - Beggin.mp3',
+        },
+        {
+            id: '26',
+            artist: 'Dynoro, Gigi D\'Agostino',
+            track: 'In My Mind',
+            poster: 'img/photo26.jpg',
+            mp3: 'audio/Dynoro, Gigi D\'Agostino - In My Mind.mp3',
+        },
+        {
+            id: '27',
+            artist: 'The Kid LAROI, Justin Bieber',
+            track: 'STAY',
+            poster: 'img/photo27.jpg',
+            mp3: 'audio/The Kid LAROI, Justin Bieber - STAY.mp3',
+        },
+        {
+            id: '28',
+            artist: 'Markul',
+            track: 'Стрелы',
+            poster: 'img/photo28.jpg',
+            mp3: 'audio/Markul - Стрелы.mp3',
+        },
+        {
+            id: '29',
+            artist: 'NЮ, Асия',
+            track: 'Останься',
+            poster: 'img/photo29.jpg',
+            mp3: 'audio/NЮ, Асия - Останься.mp3',
+        },
+        {
+            id: '30',
+            artist: 'Моя Мишель, Dose',
+            track: 'Пташка',
+            poster: 'img/photo30.jpg',
+            mp3: 'audio/Моя Мишель, Dose - Пташка.mp3',
+        },
+        {
+            id: '31',
+            artist: 'DJ SMASH, NIVESTA',
+            track: 'Позвони',
+            poster: 'img/photo31.jpg',
+            mp3: 'audio/DJ SMASH, NIVESTA - Позвони.mp3',
+        },
+        {
+            id: '32',
+            artist: 'Trippy Music',
+            track: 'Derniere Danse',
+            poster: 'img/photo32.jpg',
+            mp3: 'audio/Trippy Music - Derniere Danse.mp3',
+        },
+        {
+            id: '33',
+            artist: 'Fousheé',
+            track: 'Deep End',
+            poster: 'img/photo33.jpg',
+            mp3: 'audio/Fousheé - Deep End.mp3',
+        },
+        {
+            id: '34',
+            artist: 'Alis Shuka',
+            track: 'Not About Us',
+            poster: 'img/photo34.jpg',
+            mp3: 'audio/Alis Shuka - Not About Us.mp3',
+        },
+        {
+            id: '35',
+            artist: 'HENSY',
+            track: 'Поболело и прошло',
+            poster: 'img/photo35.jpg',
+            mp3: 'audio/HENSY - Поболело и прошло.mp3',
+        },
     ];
 
     let playlist = [];
@@ -298,7 +459,7 @@
         favoriteBtn.addEventListener('click', () => {
             const data =
                 dataMusic.filter((item) => favoriteList.includes(item.id));
-            console.log('data: ', data);
+            // console.log('data: ', data);
             renderCatalog(data);
         });
 
